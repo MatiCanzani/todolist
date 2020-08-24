@@ -100,8 +100,6 @@ const elementsIds = (task) => {
     }
 }
 
-
-
 const deleteTasks = (task, cntrId, deleteId) => {
     const deleteBtn = document.getElementById(`${deleteId}`);
     deleteBtn.addEventListener('click', () => {
@@ -160,7 +158,6 @@ const editTask = (task, itemId, editId, deleteId, confEdit, trashId) => {
 const lineThorough = (taskId, checkId) => {
     const check = document.getElementById(`${checkId}`);
     const taskInfo = document.getElementById(`${taskId}`);
-    console.log(taskInfo)
     check.addEventListener('click', () => {
         const lineThorough = () => {
             if (check.checked) {

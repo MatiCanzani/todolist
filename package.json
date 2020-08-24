@@ -7,10 +7,6 @@
     "start": "node src/app.js",
     "dev": "nodemon src/app.js"
   },
-  "engines": {
-    "node": "12.16.2",
-    "npm": "6.14.4"
-  },
   "author": "Matias Canzani",
   "license": "ISC",
   "dependencies": {
