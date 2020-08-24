@@ -6,10 +6,14 @@ const clearValue = () => {
     todoTasks.value = "";
 }
 const getTasks = async () => {
-    const res = await fetch('https://todolist-maticanzani.herokuapp.com');
+    try{
+    const res = await fetch('https://todolist-maticanzani.herokuapp.com/tasks');
     const data = await res.json();
     displayTasks(data);
-    return data;
+    }
+    catch (err){
+        console.log(err)
+    }
 }
 
 form.addEventListener('submit', (e) => {
