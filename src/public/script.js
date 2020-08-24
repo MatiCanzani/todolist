@@ -6,7 +6,6 @@ const clearValue = () => {
     todoTasks.value = "";
 }
 const getTasks = async () => {
-    const url = `${url}`;
     const res = await fetch(url);
     const data = await res.json();
     displayTasks(data);
