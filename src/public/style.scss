@@ -1,0 +1,164 @@
+$fa-font-path: "./webfonts";
+$title-font: "Nanum Pen Script", cursive;
+$task-font2: "Patrick Hand SC", cursive;
+$task-font: "Coming Soon", cursive;
+$white: white;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(318.32deg, #c3d1e4 0%, #dde7f3 55%, #d4e0ed 100%);
+  background: #e0e5ec;
+  min-height: 100vh;
+}
+.wrapper {
+  margin: 5rem auto;
+}
+
+.neumorphism {
+  background-color: #e0e5ec;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+.card{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem;
+  align-items: center;
+  position: relative;
+  background: transparent;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  // border-radius: 2.5rem;
+  .card__text {
+    text-align: left;
+  }
+}
+
+.card-w {
+  padding: 0;
+  width: 100%;
+}
+
+.span-cntr {
+  font-family: $task-font2;
+  font-size: 1.3rem;
+  align-items: center;
+  padding: 1rem .3rem;
+  border: none;
+}
+
+.cntr {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  border-radius: 1rem;
+  margin: 1rem;
+  min-width: 30%;
+  min-height: 200px;
+}
+
+.div-bkd {
+  background: none;
+  border: none;
+  border-radius: 0.2px;
+
+  &--button {
+    @extend .div-bkd;
+  }
+}
+
+.checked {
+  text-decoration-line: line-through;
+  font-style: italic;
+  color: black;
+  text-align: center;
+}
+
+.fa-check {
+  color: #0b4391;
+}
+
+.fa-times {
+  color: red;
+}
+
+.title {
+  font-family: $title-font;
+  font-size: 5rem;
+  color: $white;
+  margin: 2rem;
+  text-align: center;
+  //   text-shadow: 0 13.36px 8.896px #2c2c2b,0 -2px 1px;
+  text-shadow: 3px 3px 2px rgba(150, 150, 150, 0.7);
+}
+
+.text-break {
+  overflow-wrap: break-word;
+}
+
+.card__text {
+  margin: 0;
+}
+
+.form-cntr {
+  min-width: 600px;
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.btn-neuf {
+  background-color: #e0e5ec;
+  box-shadow: 4px 4px 9px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  margin: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  &:hover,
+  &:focus,
+  &:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+span:focus{
+    outline: none;
+    }
+    .btn:focus{
+        outline: none !important;
+    }
+
+  input[type=text]:enabled {
+    background: none;
+    border-radius: 1rem;
+
+  }

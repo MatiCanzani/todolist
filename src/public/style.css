@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: linear-gradient(318.32deg, #c3d1e4 0%, #dde7f3 55%, #d4e0ed 100%);
+  background: #e0e5ec;
+  min-height: 100vh; }
+
+.wrapper {
+  margin: 5rem auto; }
+
+.neumorphism {
+  background-color: #e0e5ec;
+  -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+          box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5); }
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background: transparent;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2); }
+  .card .card__text {
+    text-align: left; }
+
+.card-w {
+  padding: 0;
+  width: 100%; }
+
+.span-cntr {
+  font-family: "Patrick Hand SC", cursive;
+  font-size: 1.3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem .3rem;
+  border: none; }
+
+.cntr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  border-radius: 1rem;
+  margin: 1rem;
+  min-width: 30%;
+  min-height: 200px; }
+
+.div-bkd, .div-bkd--button {
+  background: none;
+  border: none;
+  border-radius: 0.2px; }
+
+.checked {
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  font-style: italic;
+  color: black;
+  text-align: center; }
+
+.fa-check {
+  color: #0b4391; }
+
+.fa-times {
+  color: red; }
+
+.title {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 5rem;
+  color: white;
+  margin: 2rem;
+  text-align: center;
+  text-shadow: 3px 3px 2px rgba(150, 150, 150, 0.7); }
+
+.text-break {
+  overflow-wrap: break-word; }
+
+.card__text {
+  margin: 0; }
+
+.form-cntr {
+  min-width: 600px; }
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform; }
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.btn-neuf {
+  background-color: #e0e5ec;
+  -webkit-box-shadow: 4px 4px 9px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+          box-shadow: 4px 4px 9px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  margin: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform; }
+  .btn-neuf:hover, .btn-neuf:focus, .btn-neuf:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+
+span:focus {
+  outline: none; }
+
+.btn:focus {
+  outline: none !important; }
+
+input[type=text]:enabled {
+  background: none;
+  border-radius: 1rem; }
+
+/*# sourceMappingURL=style.css.map */
