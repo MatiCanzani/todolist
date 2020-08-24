@@ -1,12 +1,12 @@
 const display = document.getElementById('display-tasks');
 const form = document.getElementById('form');
 const todoTasks = document.getElementById('title');
-
+const url = 'https://todolist-maticanzani.herokuapp.com' 
 const clearValue = () => {
     todoTasks.value = "";
 }
 const getTasks = async () => {
-    const url = 'http://localhost:4000/tasks';
+    const url = `${url}`;
     const res = await fetch(url);
     const data = await res.json();
     displayTasks(data);
@@ -17,7 +17,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     axios({
         method: 'POST',
-        url: 'http://localhost:4000/add',
+        url: `${url}/add`,
         data: {
             title: todoTasks.value
         }
@@ -105,7 +105,7 @@ const deleteTasks = (task, cntrId, deleteId) => {
     deleteBtn.addEventListener('click', () => {
         axios({
             method: 'DELETE',
-            url: `http://localhost:4000/${task._id}`,
+            url: `${url}/${task._id}`,
         }
         ).then(() => {
             document.getElementById(`${cntrId}`).remove();
@@ -140,7 +140,7 @@ const editTask = (task, itemId, editId, deleteId, confEdit, trashId) => {
         sendBtn.addEventListener('click', () => {
                 axios({
                     method: 'PUT',
-                    url: `http://localhost:4000/${task._id}`,
+                    url: `${url}/${task._id}`,
                     data: {
                         title: taskInfoId.value
                     }
